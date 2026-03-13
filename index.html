@@ -1,156 +1,24 @@
 <html>
 
 <head>
-    <title>Самостоятельная работа 1</title>
+    <title>ОПPython</title>
 </head>
 
 <body>
-    <font color="FFFFF"></font>
-    <div align="center">
-        <H1>
-            <font size="+4" color="FFA500">Управление данными на фоне</font>
-        </H1>
-    </div>
-
+    <font color="FFFFFF"></font>
+    <H1>
+        <font color="#000000">
+            <div align="center">Test</div>
+        </font>
+    </H1>
     <br>
+    <H2><label>Выберите раздел</label></H2>
     <br>
-    <center><input type="text" name="Fam" placeholder="Фамилия">
-        <br>
-        <br>
-        <input type="text" name="name" placeholder="Имя">
-        <br>
-        <br>
-        <input type="text" name="otch" placeholder="Отчество">
-        <br>
-        <br>
-        <input type="date" name="date1">
-        <br>
-        <br>
-        <input type="button" name="voz" value="Вычислить возраст">
-        <br>
-        <br>
-        <input type="text" name="voz" placeholder="Возраст">
-        <br>
-        <br>
-        <input type="text" name="pol" placeholder="Пол">
-        <br>
-        <br>
-
-        <p>
-        <table width="30%" height="5%" border="2" cellspacing="1" cellpading="2" align="center">
-            <tr>
-                <th>Фамилия</th>
-                <th>Имя</th>
-                <th>Отчество</th>
-                <th>Дата рождения</th>
-                <th>Возраст</th>
-                <th>Пол</th>
-            </tr>
-            <tr>
-                <th><input type="text" name="fam"></th>
-                <th><input type="text" name="name"></th>
-                <th><input type="text" name="otch"></th>
-                <th><input type="text" name="date1"></th>
-                <th><input type="text" name="voz"></th>
-                <th><input type="text" name="pol"></th>
-            </tr>
-            </p>
-        </table>
-
-        <br>
-        <br>
-        <input type="button" name="dobaviti" value="Добавить данные">
-        <br>
-        <br>
-        <input type="button" name="udality" value="Удалить последнюю запись из таблицы">
-        <br>
-        <br>
-        <input type="button" name="poisk" value="Поиск данных в таблице">
-    </center>
-    <br>
-    <br>
-    <script>
-        function AddRow() {
-            var table = document.getElementById("MyTable")
-            rowsCount = table.rows.length,
-
-                newRow = table.insertRow(),
-                newCell = newRow.insertCell();
-            newCell2 = newRow.insertCell();
-            newCell3 = newRow.insertCell();
-            newCell4 = newRow.insertCell();
-            newCell5 = newRow.insertCell();
-            newCell6 = newRow.insertCell();
-
+    1.<A href="theory.html"><input type="button" name="data types" value="Переменные в Python"></A>
     
-            newCell.textContent = form1.fam.value;
-            newCell2.textContent = form1.name.value;
-            newCell3.textContent = form1.otch.value;
-            newCell4.textContent = form1.date1.value;
-            newCell5.textContent = form1.voz.value;
-            newCell6.textContent = form1.pol.value;
-
-
-            form1.Fam.value = "";
-            form1.name.value = "";
-            form1.otch.value = "";
-            form1.date1.value = "";
-            form1.voz.value = "";
-            form1.pol.value = "";
-
-        }
-
-        document.querySelector('.add-row').addEventListener('click', addTableRow);
-
-        function DeleteTable() {
-        let question = confirm('вы точно хотите удалить запись')
-
-            if (question == true) {
-                var table = document.getElementById("MyTable");
-            let a1 = table.rows.length;
-                if (a1 > 1) {
-                    alert('Всего строк: ' + a1);
-                    table.deleteRow(a1 - 1);
-                    alert('Данные из последней записи были удалены.');
-
-                }
-                else {
-                    alert('Нельзя удалить заголовок из таблицы');
-                }
-            }
-            else {
-                alert('Запись не была удалена. Вы отменили удаление.');
-            }
-        }
-        function SearchData() {
-            var table = document.getElementById("MyTable");
-        let kolvoStr = table.rows.length;
-        let i = 0;
-            for (i = 0; i < kolvoStr; i++) {  
-            let a1 = document.querySelectorAll('tr');
-            let a2 = a1[1].querySelectorAll('td')[2];
-            alert(a2);
-
-            let trs = document.querySelectorAll('tr');
-            let td = trs[1].querySelectorAll('td')[2];
-            console.log(td);
-
-            let row = document.createElement('tr');
-            row.innerHTML
-            }
-        }
-        function FuncAge() {
-            var currentyear = new Date().getFullYear();
-            var a1 = form1.voz = date1.value
-        let date1 = voz.parse(a1);
-        let date2 = new voz(date1);
-            alert(a1);
-            alert('Год' + date1);
-            alert('Новая дата ' + date2);
-        }
-
-    </script>
-
+    <br>
+    <br>
+    2.<input type="button" name="input-output" value="Ввод-вывод данных в Python">
 </body>
 
 </html>
