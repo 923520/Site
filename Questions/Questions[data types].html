@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Вопросы по теме "типы данных"</title>
+</head>
+
+<body>
+    <font color="FFFFFF"></font>
+    <H1>
+        <form name="types1">
+            <font color="#000000">
+                <div align="center">Тест по теме "Типы данных"</div>
+    </H1>
+    </font>
+    <br>
+    <br>
+    №1
+    <br>
+    <br>
+    <label>
+        Каким типом данных обладает x = int ?
+        <label>
+            <br>
+            <input type="radio" name="a1" id="a11">
+            <label>Строка</label>
+            <br>
+            <input type="radio" name="a2" id="a21">
+            <label>Целое число</label>
+            <br>
+            <input type="radio" name="a3" id="a31">
+            <label>Число с плавающей точкой</label>
+            <br>
+            <br>
+            <div>
+                <button onclick="b1()">Проверить результат</button>
+            </div>
+            </form>
+            <script>
+                function b1() {
+                    let bal = 0;
+                    if (types1.a21.checked == true) bal += 1;
+                    if (types1.a21.value == "Целое число") bal += 1;
+                    alert(bal);
+                }
+            </script>
+
+</body>
+
+</html>
