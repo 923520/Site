@@ -19,30 +19,62 @@
     <br>
     <label>
         Каким типом данных обладает x = int ?
-        <label>
-            <br>
-            <input type="radio" name="a1" id="a11">
-            <label>Строка</label>
-            <br>
-            <input type="radio" name="a2" id="a21">
-            <label>Целое число</label>
-            <br>
-            <input type="radio" name="a3" id="a31">
-            <label>Число с плавающей точкой</label>
-            <br>
-            <br>
-            <div>
-                <button onclick="b1()">Проверить результат</button>
-            </div>
-            </form>
-            <script>
-                function b1() {
-                    let bal = 0;
-                    if (types1.a21.checked == true) bal += 1;
-                    if (types1.a21.value == "Целое число") bal += 1;
-                    alert(bal);
-                }
-            </script>
+    </label>
+    <br>
+    <input type="radio" name="a1" id="a11">
+    <label>Строка</label>
+    <br>
+    <input type="radio" name="a1" id="a21">
+    <label>Целое число</label>
+    <br>
+    <input type="radio" name="a1" id="a31">
+    <label>Число с плавающей точкой</label>
+    <br>
+    <br>
+    №2
+    <br>
+    <br>
+    <label>
+        Какой это тип данных?
+    </label>
+    <br>
+    <br>
+    <input type="text" placeholder="Ответ" name="otvet1" size="25" id="c11">
+    <br>
+    <br>
+    №3
+    <br>
+    <br>
+    <label>
+        Что выведет консоль?
+    </label>
+    <br>
+    <input type="radio" name="d1" id="d11">
+    <label>ValueError</label>
+    <br>
+    <input type="radio" name="d1" id="d21">
+    <label>Строку</label>
+    <br>
+    <input type="radio" name="d1" id="d31">
+    <label>Число</label>
+    <br>
+    <br>
+    <div>
+        <button onclick="b1()">Проверить результат</button>
+    </div>
+    </form>
+    <script>
+        function b1() {
+            let bal = 0;
+            if (types1.a21.checked == true) bal += 1;
+            if (types1.a21.value == "Целое число") bal += 1;
+            if (types1.c11.checked == true) bal += 1;
+            if (types1.c11.value == "Число с плавающей точкой") bal += 1;
+            if (types1.d11.checked == true) bal += 1;
+            if (types1.d11.value == "ValueError") bal += 1;
+            alert(`Количество баллов: ${bal}`);
+        }
+    </script>
 
 </body>
 
