@@ -2,6 +2,7 @@
 
 <head>
     <title>Вопросы по теме "типы данных"</title>
+    <link rel="style" href="..\CSS\data types.css">
 </head>
 
 <body>
@@ -12,6 +13,9 @@
                 <div align="center">Тест по теме "Типы данных"</div>
     </H1>
     </font>
+    <br>
+    <br>
+    <A href="..\index.html"><input type="button" name="nazad" value="Назад на главную"></A>
     <br>
     <br>
     №1
@@ -32,17 +36,11 @@
     <br>
     <br>
     №2
-    <div class="Ex1">
-        <img src="Pictures/[data types] task2.jpg">
-
-        <style>
-            .Ex1 {
-                display: inline-block;
-            }
-        </style>
-        
-    </div>
     <br>
+    <div class="Ex1">
+        <img
+            src="..\Pictures\[data types] task 2.png">
+    </div>
     <br>
     <label>
         Какой это тип данных?
@@ -54,13 +52,17 @@
     <br>
     №3
     <br>
+    <div class="Ex3">
+        <img
+            src="..\Pictures\[data types] task 3.png">
+    </div>
     <br>
     <label>
-        Что выведет консоль?
+        X использует какой тип данных?
     </label>
     <br>
     <input type="radio" name="d1" id="d11">
-    <label>ValueError</label>
+    <label>Никакой</label>
     <br>
     <input type="radio" name="d1" id="d21">
     <label>Строку</label>
@@ -81,7 +83,7 @@
             if (types1.c11.checked == true) bal += 1;
             if (types1.c11.value == "Число с плавающей точкой") bal += 1;
             if (types1.d11.checked == true) bal += 1;
-            if (types1.d11.value == "ValueError") bal += 1;
+            if (types1.d11.value == "Никакой") bal += 1;
             alert(`Количество баллов: ${bal}`);
         }
     </script>
