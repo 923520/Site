@@ -36,17 +36,17 @@
     </label>
     <br>
     <div class="Ex22">
-        <img src="">
+        <img src="..\Pictures\[input-output] task 2.png">
     </div>
     <br>
     <input type="radio" name="g1" id="g11">
-    <label></label>
+    <label>5</label>
     <br>
     <input type="radio" name="g1" id="g12">
-    <label></label>
+    <label>55</label>
     <br>
     <input type="radio" name="g1" id="g13">
-    <label></label>
+    <label>2</label>
     <br>
     <br>
     №3
@@ -57,17 +57,17 @@
     </label>
     <br>
     <div class="Ex32">
-        <img src="">
+        <img src="..\Pictures\[input-output] task 3.png">
     </div>
     <br>
     <input type="radio" name="h1" id="h11">
-    <label></label>
+    <label>Тест</label>
     <br>
     <input type="radio" name="h1" id="h12">
-    <label></label>
+    <label>ValueError</label>
     <br>
     <input type="radio" name="h1" id="h13">
-    <label></label>
+    <label>4</label>
     <br>
     <br>
     <div>
@@ -77,6 +77,13 @@
     <script>
         function i1() {
             let ball = 0;
+            if (vvod1.f11.checked == true) ball += 1;
+            if (vvod1.f11.value == "Ввод и вывод данных") ball += 1;
+            if (vvod1.g11.checked == true) ball += 1;
+            if (vvod1.g11.value == "5") ball += 1;
+            if (vvod1.h12.checked == true) ball += 1;
+            if (vvod1.h12.value == "ValueError") ball += 1;
+            alert(`Количество баллов: ${ball}`);
         }
     </script>
 </body>
